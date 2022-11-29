@@ -3,7 +3,7 @@
 # Sections :bookmark:
 - HOME
 - ABOUT
-- RESUME
+- CV
     - EDUCATION
     - SKILLS
     - EXPERIENCE
