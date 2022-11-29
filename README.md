@@ -10,8 +10,6 @@
     - PROJECTS 
     - Achievements <br />
 - SERVICES 
-    - TESTIMONIALS <br />
-- BLOG
 - CONTACTS 
 
 
