@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="app">
-      <Router>
+      <Router basename={'/CV'}>
         <ScrollToTop/>
         <Switch>
         <Redirect from="/:url*(/+)" to={pathname.slice(0, -1)} />
