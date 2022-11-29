@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
 import { ThemeContext } from './contexts/ThemeContext';
 import { Main, BlogPage, ProjectPage } from './pages'
@@ -10,7 +10,6 @@ import './App.css'
 
 function App() {
 
-  const { pathname } = useLocation();
   const { theme } = useContext(ThemeContext);
 
   console.log("%cDEVELOPER PORTFOLIO", `color:${theme.primary}; font-size:50px`);
@@ -19,10 +18,9 @@ function App() {
 
   return (
     <div className="app">
-      <Router basename={'/CV'}>
+      <Router basename={"/CV"}>
         <ScrollToTop/>
         <Switch>
-        <Redirect from="/:url*(/+)" to={pathname.slice(0, -1)} />
           <Route path="/" exact component={Main} />
           <Route path="/blog" exact component={BlogPage} />
           <Route path="/projects" exact component={ProjectPage} />
